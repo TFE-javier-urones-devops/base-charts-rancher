@@ -1,0 +1,20 @@
+configs:
+  params:
+    server.insecure: true
+repoServer:
+  env:
+  - name: SSL_CERT_DIR
+    value: /app/config/tls/
+server:
+  certificate:
+    domain: argocd.javierum.com
+    enabled: true
+    issuer:
+      group: cert-manager.io
+      kind: ClusterIssuer
+      name: selfsigned-cluster-issuer
+  ingress:
+    enabled: true
+    hostname: argocd.javierum.com
+    ingressClassName: nginx
+    tls: true
