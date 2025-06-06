@@ -4,6 +4,7 @@ ingress:
   ingressClassName: nginx
   tls:
     source: rancher
+replicas: 1
 
 global:
   cattle:
