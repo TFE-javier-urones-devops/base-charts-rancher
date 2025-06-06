@@ -7,5 +7,5 @@ ingress:
 
 global:
   cattle:
-    psp: false
-    telemetry: false
+    psp:
+    enabled: false

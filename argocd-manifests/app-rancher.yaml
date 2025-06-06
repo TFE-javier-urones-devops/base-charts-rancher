@@ -9,11 +9,12 @@ spec:
     repoURL: https://github.com/TFE-javier-urones-devops/base-charts-rancher.git
     targetRevision: main
     path: charts/rancher
-    valuesFiles:
-      - values-rancher.yaml
+    helm:
+      valueFiles:
+        - values-rancher.yaml
   destination:
     server: https://kubernetes.default.svc
-    namespace: rancher
+    namespace: cattle-system
   syncPolicy:
     automated:
       prune: true
