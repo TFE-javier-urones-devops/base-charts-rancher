@@ -12,7 +12,7 @@ server:
     issuer:
       group: cert-manager.io
       kind: ClusterIssuer
-      name: selfsigned-cluster-issuer
+      name: selfsigned-clusterissuer
   ingress:
     enabled: true
     hostname: argocd.javierum.com

@@ -1,0 +1,11 @@
+hostname: rancher.javierum.com
+
+ingress:
+  ingressClassName: nginx
+  tls:
+    source: rancher
+
+global:
+  cattle:
+    psp: false
+    telemetry: false
