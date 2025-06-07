@@ -7,7 +7,7 @@ letsEncrypt:
 ingress:
   ingressClassName: nginx
   tls:
-    source: letsEncrypt
+    source: rancher
 replicas: 1
 bootstrapPassword: "r4nch3r"
 global:
