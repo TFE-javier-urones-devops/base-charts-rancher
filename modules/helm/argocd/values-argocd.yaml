@@ -14,7 +14,7 @@ server:
     issuer:
       group: cert-manager.io
       kind: ClusterIssuer
-      name: selfsigned-clusterissuer
+      name: letsencrypt-prod
   ingress:
     enabled: true
     hostname: argocd.javierum.com
