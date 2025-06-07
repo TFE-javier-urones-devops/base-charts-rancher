@@ -4,8 +4,7 @@ ingress:
   ingressClassName: nginx
   tls:
     source: secret
-    secretName: rancher
-privateCA: true
+    secretName: tls-rancher-secret
 replicas: 1
 bootstrapPassword: "r4nch3r"
 global:
