@@ -14,4 +14,3 @@ global:
   cattle:
     psp:
     enabled: false
-privateCA: true
