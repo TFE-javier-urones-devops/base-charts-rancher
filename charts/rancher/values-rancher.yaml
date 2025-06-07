@@ -1,7 +1,7 @@
 hostname: rancher.javierum.com
 letsEncrypt:
   email: "javierum98@gmail.com"
-  environment: "production
+  environment: "production"
   ingress:
     class: nginx
 ingress:
