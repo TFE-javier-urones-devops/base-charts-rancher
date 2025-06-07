@@ -3,17 +3,12 @@ ingress:
   enabled: true
   includeDefaultExtraAnnotations: true
   ingressClassName: nginx
-  pathType: ImplementationSpecific
-  path: "/"
-  servicePort: 80
-
   extraAnnotations:
     cert-manager.io/cluster-issuer: "letsencrypt-prod"
     acme.cert-manager.io/http01-ingress-class: "nginx"
-
   tls:
     source: secret
-    secretName: tls-rancher-ingress
+    secretName: rancher
 
 replicas: 1
 bootstrapPassword: "r4nch3r"
