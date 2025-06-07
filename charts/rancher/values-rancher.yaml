@@ -3,7 +3,8 @@ hostname: rancher.javierum.com
 ingress:
   ingressClassName: nginx
   tls:
-    source: rancher
+    source: secret
+    secretName: tls-rancher
 replicas: 1
 
 global:
