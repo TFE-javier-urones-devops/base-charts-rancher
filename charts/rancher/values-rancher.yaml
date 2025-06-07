@@ -1,11 +1,7 @@
 hostname: rancher.javierum.com
 ingress:
   enabled: true
-  includeDefaultExtraAnnotations: true
   ingressClassName: nginx
-  extraAnnotations:
-    cert-manager.io/cluster-issuer: "letsencrypt-prod"
-    acme.cert-manager.io/http01-ingress-class: "nginx"
   tls:
     source: secret
     secretName: rancher
