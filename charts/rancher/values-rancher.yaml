@@ -6,7 +6,7 @@ ingress:
     source: secret
     secretName: tls-rancher
 replicas: 1
-
+bootstrapPassword: "r4nch3r"
 global:
   cattle:
     psp:

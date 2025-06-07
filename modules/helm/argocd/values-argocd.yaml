@@ -1,6 +1,8 @@
 configs:
   params:
     server.insecure: true
+  secret:
+    argocdServerAdminPassword: "$2a$10$EBQ17oRhdHGQ7kTg/bYuyei10Oj2n4ZGGLh2jwyUptf41NsipmIH2"
 repoServer:
   env:
   - name: SSL_CERT_DIR
