@@ -6,6 +6,7 @@ ingress:
     source: secret
     secretName: tls-rancher-secret
 replicas: 1
+privateCA: true
 bootstrapPassword: "r4nch3r"
 global:
   cattle:
