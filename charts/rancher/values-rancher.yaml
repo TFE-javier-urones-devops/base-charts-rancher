@@ -1,5 +1,6 @@
 hostname: rancher.javierum.com
 ingress:
+  enabled: true
   tls:
     source: secret
     secretName: tls-rancher-secret
