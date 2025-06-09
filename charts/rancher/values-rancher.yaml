@@ -2,10 +2,6 @@ hostname: rancher.javierum.com
 ingress:
   enabled: true
   ingressClassName: nginx
-#   tls:
-#     source: secret
-#     secretName: tls-rancher-secret
-# privateCA: true
 replicas: 1
 bootstrapPassword: "r4nch3r"
 global:
